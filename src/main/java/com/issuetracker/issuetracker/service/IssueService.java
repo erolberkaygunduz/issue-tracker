@@ -1,6 +1,7 @@
 package com.issuetracker.issuetracker.service;
 
 import com.issuetracker.issuetracker.dto.IssueDto;
+import com.issuetracker.issuetracker.dto.ProjectDto;
 import com.issuetracker.issuetracker.entity.Issue;
 import com.issuetracker.issuetracker.entity.IssueHistory;
 import com.issuetracker.issuetracker.util.TPage;
@@ -16,6 +17,8 @@ public interface IssueService {
     TPage<IssueDto> getAllPageable (Pageable pageable);
 
     Boolean delete(Long issue);
+
+    IssueDto update(Long id, IssueDto issue);
 
 
 

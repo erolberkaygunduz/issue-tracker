@@ -48,7 +48,6 @@ public class IssueServiceImpl implements com.issuetracker.issuetracker.service.I
         page.setStat(data, Arrays.asList(dtos));
         return page;
 
-
     }
 
 
@@ -56,5 +55,10 @@ public class IssueServiceImpl implements com.issuetracker.issuetracker.service.I
     public Boolean delete(Long issueId) {
         issueRepository.deleteById(issueId);
         return true;
+    }
+
+    @Override
+    public IssueDto update(Long id, IssueDto issue) {
+        return null;
     }
 }

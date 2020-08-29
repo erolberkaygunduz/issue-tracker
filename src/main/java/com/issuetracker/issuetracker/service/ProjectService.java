@@ -1,24 +1,24 @@
 package com.issuetracker.issuetracker.service;
 
-import com.issuetracker.issuetracker.entity.Project;
-import org.springframework.data.domain.Page;
+import com.issuetracker.issuetracker.dto.ProjectDto;
+import com.issuetracker.issuetracker.util.TPage;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
 public interface ProjectService {
 
-    Project save(Project Project);
+    ProjectDto save(ProjectDto project);
 
-    Project getById(Long id);
+    ProjectDto getById(Long id);
 
-    List<Project> getByProjectCodeContains(String projectCode);
+    ProjectDto getByProjectCode(String projectCode);
 
-    Page<Project> getAllPageable (Pageable pageable);
+    List<ProjectDto> getByProjectCodeContains(String projectCode);
 
-    Boolean delete(Project project);
+    TPage<ProjectDto> getAllPageable(Pageable pageable);
 
+    Boolean delete(Long id);
 
-
-
+    ProjectDto update(Long id, ProjectDto project);
 }
