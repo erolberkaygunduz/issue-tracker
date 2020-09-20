@@ -1,0 +1,17 @@
+[
+  {
+    "_class": "com.issuetracker.issuetracker.entity.Project",
+    "projectCode" : "IM",
+    "projectName": "Issue Management Project"
+  },
+  {
+    "_class": "com.issuetracker.issuetracker.entity.Project",
+    "projectCode" : "ERS-S",
+    "projectName": "ERPS Project for Sales"
+  },
+  {
+    "_class": "com.issuetracker.issuetracker.entity.Project",
+    "projectCode" : "CRM-S",
+    "projectName": "CRMS Project for Sales"
+  }
+]
